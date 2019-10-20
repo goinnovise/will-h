@@ -14,10 +14,10 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 a {
-    color: darken($theme-color, 15%);
+    color: $theme-color;
     &:hover {
         text-decoration: underline;
-        color: darken($theme-color, 30%);
+        color: darken($theme-color, 15%);
     }
     &:focus {
         text-decoration: none;
@@ -161,7 +161,7 @@ p {
         text-transform: uppercase;
         font-size: 20px;
         font-weight: 500;
-        color: darken($theme-color, 15%);
+        color: $theme-color;
         position: relative;
         margin-top: 0;
         margin-bottom: 20px;
@@ -194,16 +194,21 @@ p {
         color: $text-grey;
     }
     .company, .university {
-        margin-bottom: 10px;
         color: $text-grey;
     }
+
+    .details {
+        margin-top:10px;
+    }
+
+
 
     .project-title {
         font-size: 16px;
         font-weight: 400;
         margin-top: 0;
         margin-bottom: 5px;
-	color: darken($theme-color, 15%);
+	color: $theme-color;
     }
     .projects-section {
         .intro {
@@ -238,7 +243,6 @@ p {
 
 .skillset {
     .item {
-        margin-bottom: 15px;
         overflow: hidden;
     }
     .level-title {
@@ -246,14 +250,7 @@ p {
         margin-top: 0;
         margin-bottom: 12px;
     }
-    .level-bar {
-        height: 12px;
-        background: $smoky-white;
-    }
-    .level-bar-inner {
-        height: 12px;
-        background: lighten($theme-color, 15%);
-    }
+
 }
 
 

@@ -12,20 +12,31 @@
 
   <div class="skillset">
 
-    {% for skill in skills.toolset %}
     <div class="item">
+      <b>Software Languages: </b><span>{{ skills.languages }}</span>
+    </div>
+    <!--//item-->
+    <div class="item">
+      <b>Frameworks: </b><span>{{ skills.frameworks }}</span>
+    </div>
+    <!--//item-->
 
-      <h3 class="level-title">{{ skill.name }}</h3>
+    <div class="item">
+      <b>Tools: </b><span>{{ skills.tools }}</span>
+    </div>
+    <!--//item-->
 
-      <div class="level-bar">
-        <div class="level-bar-inner" data-level="{{ skill.level }}">
-        </div>
-      </div><!--//level-bar-->
+    <div class="item">
+      <b>Operations: </b><span>{{ skills.operations }}</span>
+    </div>
+    <!--//item-->
 
-    </div><!--//item-->
-    {% endfor %}
+    <div class="item">
+      <b>Other: </b><span>{{ skills.other }}</span>
+    </div>
+    <!--//item-->
 
   </div>
-
-</section><!--//skills-section-->
+</section>
+<!--//skills-section-->
 {% endif %}
