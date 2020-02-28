@@ -19,7 +19,8 @@ This is a jekyll application. Install Jekyll following the instructions for your
 7. `git push origin master`
 
 You can later update your downstream resumes with:
-`git pull upstream master`
+`git fetch upstream`
+`git rebase upstream/master`
 
 - Update `assets/images/profile.png`
 - Update data.yml for the new employee.

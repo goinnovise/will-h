@@ -15,27 +15,30 @@
     <div class="item">
       <b>Software Languages: </b><span>{{ skills.languages }}</span>
     </div>
-    <!--//item-->
+    
+    {% if skills.frameworks %}
     <div class="item">
       <b>Frameworks: </b><span>{{ skills.frameworks }}</span>
     </div>
-    <!--//item-->
+    {% endif %}
 
+    {% if skills.tools %}
     <div class="item">
       <b>Tools: </b><span>{{ skills.tools }}</span>
     </div>
-    <!--//item-->
+    {% endif %}
 
+    {% if skills.operations %}
     <div class="item">
       <b>Operations: </b><span>{{ skills.operations }}</span>
     </div>
-    <!--//item-->
+    {% endif %}
 
+    {% if skills.other %}
     <div class="item">
       <b>Other: </b><span>{{ skills.other }}</span>
     </div>
-    <!--//item-->
-
+    {% endif %}
   </div>
 </section>
 <!--//skills-section-->
